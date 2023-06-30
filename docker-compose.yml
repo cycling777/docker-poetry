@@ -1,0 +1,9 @@
+version: '3'
+services:
+  python-poetry:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/var/src
+    tty: true
